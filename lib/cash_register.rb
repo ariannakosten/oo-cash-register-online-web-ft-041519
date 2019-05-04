@@ -17,7 +17,7 @@ def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will alway
    #title + (title * quantity)
     #if quantity > 1
       counter = 0
-      while counter <= quantity
+      while counter < quantity
         @items << item
         counter += 1
       end
