@@ -13,8 +13,7 @@ end
 
 
 def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will always be @ least 1
-#if quantity > 1
-      counter = 0
+   counter = 0                          # was hoping to use 
       while counter < quantity
         @items << title             #adds title to @array items each time a item is added
       counter += 1                   #trying to say: (title * quantity) = that many titles
