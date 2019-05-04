@@ -13,10 +13,10 @@ end
 
 
 def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will always be @ least 1
-   counter = 0                          # was hoping to use 
-      while counter < quantity
-        @items << title             #adds title to @array items each time a item is added
-      counter += 1                   #trying to say: (title * quantity) = that many titles
+   counter = 0        # was hoping to use #if quantity > 1...something but couldnt figure it out
+    while counter < quantity
+      @items << title             #adds title to @array items each time a item is added
+    counter += 1                   #trying to say: (title * quantity) = that many titles
     end
   @total += price*quantity              #have to use += cannot reset @total to = equation
   @prev_total = @total        #tracks the @prev_total when smthg is added.. price total is total
