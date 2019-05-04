@@ -31,7 +31,7 @@ def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will alway
   #@items << title                   #adds title to @array items each time a item is added
   
 end
-end
+
 
 def apply_discount
   if discount > 0
