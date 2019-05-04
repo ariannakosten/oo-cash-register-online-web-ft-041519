@@ -23,7 +23,7 @@ def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will alway
       end
     else
       @items << item
-    
+    end
   @total += price*quantity              #have to use += cannot reset @total to = equation
   
   @prev_total = @total        #tracks the @prev_total when smthg is added.. price total is total
