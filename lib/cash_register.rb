@@ -18,11 +18,11 @@ def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will alway
     if quantity > 1
       counter = 0
       while counter < quantity
-        @items << item
+        @items << title
         counter += 1
       end
     else
-      @items << item
+      @items << title
     end
   @total += price*quantity              #have to use += cannot reset @total to = equation
   
