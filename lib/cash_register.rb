@@ -22,7 +22,7 @@ def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will alway
         counter += 1
       #end
     #else
-      @items << title                #adds title to @array items each time a item is added
+      #@items << title                #adds title to @array items each time a item is added
     end
   @total += price*quantity              #have to use += cannot reset @total to = equation
   @prev_total = @total        #tracks the @prev_total when smthg is added.. price total is total
