@@ -15,20 +15,17 @@ end
 def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will always be @ least 1
 
    #title + (title * quantity)
-    if quantity > 1
+    #if quantity > 1
       counter = 0
       while counter < quantity
         @items << title
         counter += 1
       end
     else
-      @items << title         
+      @items << title                #adds title to @array items each time a item is added
     end
   @total += price*quantity              #have to use += cannot reset @total to = equation
   @prev_total = @total        #tracks the @prev_total when smthg is added.. price total is total
-  
-  #@items << title                   
-  
 end
 
 
@@ -41,6 +38,7 @@ else
   return "There is no discount to apply."
 end
 end
+
 
 def void_last_transaction
   @total -= @prev_total  #total = total - prev_total
