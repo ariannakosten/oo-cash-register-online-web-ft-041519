@@ -15,7 +15,7 @@ end
 def add_item(title, price, quantity = 1) #opt qty = 1 :if adding item will always be @ least 1
 
    #title + (title * quantity)
-    #if quantity > 1
+    if quantity > 1
       counter = 0
       while counter < quantity
         @items << item
